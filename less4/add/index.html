@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
+    //
+    // function sumOrLog(arg) {
+    //     if (arguments.length === 1) {
+    //         console.log('Аргумент один')
+    //         console.log(arg);
+    //     }
+    //
+    //     if (arguments.length === 2) {
+    //         console.log('Аргумента 2')
+    //         console.log(arguments[0]+arguments[1]);
+    //     }
+    // }
+    // SumOrLog(3);
+    // SumOrLog(3,4);
+
+
+    // - створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+    //     EXAMPLE:
+    // [1,2,3,4]
+    //     [2,3,4,5]
+    // результат
+    //     [3,5,7,9]
+
+    // function newArrSum(arr1, arr2) {
+    //     let newArr = [];
+    //     for (let i = 0, x = 0; i < arr1.length; i++ , x++) {
+    //         newArr[x] = arr1[i] + arr2[i];
+    //
+    //     }
+    //     console.log(newArr)
+    // }
+    //
+    // let array1 = [1, 2, 3, 4];
+    // let array2 = [2, 3, 4, 5];
+    // newArrSum(array1, array2);
+
+
+    // - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+    // EXAMPLE:
+    //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+    //
+
+    // let arr = [
+    //     {id: 1, name: 'Vlad', age: 23},
+    //     {model: 2232, car: 'Camry', ageCar: 3},
+    // ]
+    //
+    // function keyArr(ary) {
+    //     for (let i of ary) {
+    //         for (const ell in i) {
+    //             console.log(ell);
+    //         }
+    //     }
+    // }
+    //
+    // keyArr(arr);
+
+
+    //     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+    // EXAMPLE:
+    //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+    //
+    // let arr = [
+    //     {id: 1, name: 'Vlad', age: 23},
+    //     {model: 2232, car: 'Camry', ageCar: 3},
+    // ]
+    //
+    // function keyArr(ary) {
+    //     for (let i of ary) {
+    //         for (const ell in i) {
+    //             console.log(i[ell]);
+    //         }
+    //     }
+    // }
+    //
+    // keyArr(arr);
+
+</script>
+</body>
+</html>
