@@ -45,6 +45,7 @@
 // }
 
 
+
 // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 
 // let rulesClass = document.getElementById('rules');

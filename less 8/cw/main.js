@@ -106,6 +106,7 @@
 // element[0].innerText = prompt('Введите текст');
 
 
+
 // l) отримати елементи p та змінити їм padding на 20px
 
 // let element = document.getElementsByTagName('p');
