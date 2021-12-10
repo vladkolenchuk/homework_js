@@ -48,7 +48,7 @@ document.body.appendChild(btn1);
 
 let goLocalStorage = function (modelCar,typeCar,volumeCar){
     let infoCar = 'infoCar';
-    let car =JSON.parse(localStorage.getItem(infoCar)) || []  ;
+    let car = JSON.parse(localStorage.getItem(infoCar)) || []  ;
     car.push({modelCar,typeCar,volumeCar});
 
     localStorage.setItem(infoCar,JSON.stringify(car));
