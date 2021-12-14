@@ -1,0 +1,37 @@
+.wrapPost{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blockInfo{
+    width: 500px;
+    border-radius: 10px;
+    background: aqua;
+    border: 2px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.blockInfo button{
+    border-radius: 10px;
+    width: 100px;
+}
+.blockPost{
+    width: 15%;
+    border-radius: 10px;
+    background: aqua;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.blockPost h3{
+    margin: 0;
+    height: 100px;
+}
+.blockPost button{
+    border-radius: 10px;
+
+}

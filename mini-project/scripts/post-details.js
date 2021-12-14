@@ -7,6 +7,8 @@ fetch(`https://jsonplaceholder.typicode.com/posts`)
     .then(response => response.json())
     .then(posts => {
         let wrap = document.createElement('div');
+        let wrapCom = document.createElement('div');
+        wrapCom.classList.add('wrapCom');
         for (const post of posts) if (post.id === postIdInfo) {
             let blockPost = document.createElement('div');
             blockPost.classList.add('blockPost');
@@ -32,14 +34,16 @@ fetch(`https://jsonplaceholder.typicode.com/posts`)
                                                <p>Email ${comment.email}</p>
                                                <p>Body ${comment.body}</p>
                                                `;
-                            blockCom.style.border = ' 1px solid black'
-                            blockPost.appendChild(blockCom)
+                           wrapCom.appendChild(blockCom);
                         }
 
                     }
                 })
 
             wrap.appendChild(blockPost);
+            wrap.appendChild(blockComm);
+            wrap.appendChild(wrapCom);
+
         }
         document.body.appendChild(wrap);
     })

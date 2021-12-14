@@ -1,0 +1,16 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blockUser {
+    width: 40%;
+    background: aqua;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px   ;
+    border: 2px  solid gray;
+}
+button{
+    border-radius: 10px;
+    width: 200px;
+}

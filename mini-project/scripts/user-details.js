@@ -12,9 +12,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
     })
     .then(users => {
         let wrap = document.createElement('div');
+        wrap.classList.add('wrap');
         for (const user of users) if (user.id === userIdInfo) {
 
             let blockInfo = document.createElement('div');
+            blockInfo.classList.add('blockInfo');
             let btnPost = document.createElement('button');
             blockInfo.innerHTML = `
                 <h4>  ID: ${user.id}</h4>
@@ -44,6 +46,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`)
                     .then(response => response.json())
                     .then(posts => {
+                        let wrapPost = document.createElement('div');
+                        wrapPost.classList.add('wrapPost')
                             for (const post of posts) if (post.userId === user.id) {
                                 let blockPost = document.createElement('div');
                                 blockPost.classList.add('blockPost');
@@ -56,12 +60,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                     localStorage.setItem("postIdInfo", postIdInfo);
                                 }
                                 blockPost.appendChild(btnPost);
-                                blockInfo.appendChild(blockPost);
-                            }
+                                wrapPost.appendChild(blockPost);
 
-                        }
-                    )
+                            }
+                        wrap.appendChild(wrapPost);
+                        })
             }
+
             wrap.appendChild(blockInfo);
             document.body.appendChild(wrap);
         }
