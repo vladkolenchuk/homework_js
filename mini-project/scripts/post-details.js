@@ -19,7 +19,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts`)
                                                 `;
             let blockComm = document.createElement('div');
             blockComm.innerHTML = `<h3>Коментарии:</h3>`;
-            fetch('https://jsonplaceholder.typicode.com/posts/' + post.id + '/comments')
+            fetch('https://jsonplaceholder.typicode.com/comments')
                 .then(response => response.json())
                 .then(comments => {
                     for (const comment of comments) {
