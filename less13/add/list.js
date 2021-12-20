@@ -24,7 +24,6 @@ if (shopBs.length) {
             for (let i = 0; i < shopBs.length; i++) {
                 if (shopBs[i].id === +btnDel.id) {
                     shopBs.splice(i, 1);
-                    console.log(shopBs);
                     localStorage.setItem(key, JSON.stringify(shopBs));
                     location.reload();
                 }
